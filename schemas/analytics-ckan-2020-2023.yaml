@@ -1,0 +1,76 @@
+profile: data-package
+resources:
+  - dialect:
+      delimiter: ;
+    encoding: utf-8-sig
+    format: csv
+    hashing: md5
+    name: analytics-ckan-2020-2023
+    path: data/analytics-ckan-2020-2023.csv
+    profile: tabular-data-resource
+    schema:
+      fields:
+        - name: instancia
+          type: string
+          description: Portal (website) monitorado.
+        - name: periodo
+          type: integer
+          description: Intervalo de data monitorado.
+        - name: sessoes
+          type: number
+          description: Sessão é o período de tempo em que o utilizador está a interagir ativamente com o website (portal) monitorado.
+          groupChar: .
+        - name: novas-sessoes
+          type: string
+          description: Estimativa de porcentagem de primeiras visitas (sessões).
+          decimalChar: ','
+          bareNumber: True
+        - name: novos-usuarios
+          type: number
+          description: Número de usuários pela primeira vez durante o período especificado.
+          groupChar: . 
+        - name: taxa-rejeicao
+          type: string
+          description: Porcentagem de sessões de página única nas quais não existiu interação com a página. Uma sessão rejeitada tem duração de 0 segundos.
+          decimalChar: ','
+          bareNumber: True
+          - name: paginas-sessao
+          type: number
+          description: Número médio de páginas por sessão.
+          decimalChar: ','
+        - name: tempo-medio-sessao
+          type: time
+          description: Duração média de uma sessão, em segundos.
+        - name: visualizacoes-paginas
+          type: number
+          description: Número total de páginas visualizadas. São contabilizadas as visualizações repetidas de uma única página.
+          groupChar: .
+          - name: visualizacoes-unicas
+          type: number
+          description: Número de sessões durante as quais a página especificada foi visualizada pelo menos uma vez. 
+          groupChar: .
+          - name: tempo-medio-pagina
+          type: time
+          description: Média de tempo que os utilizadores visualizaram uma página ou um conjunto de páginas, em segundos.
+        - name: entradas
+          type: number
+          description: Número de vezes em que os utilizadores entraram no website através de uma página específica ou um conjunto de páginas.
+          groupChar: .
+        - name: porcentagem-saida
+          type: string
+          description: Porcentagem de saídas do website ocorridas a partir de uma página específica ou de um conjunto de páginas.
+          decimalChar: ','
+          bareNumber: True
+        - name: total-eventos
+          type: integer
+          description: Número de ocorrências de downloads.
+          groupChar: .
+          - name: eventos-exclusivos
+          type: integer
+          description: Número de vezes que um download ocorreu pelo menos uma vez durante uma sessão.
+          groupChar: .
+          - name: sessoes-com-evento
+          type: integer
+          description: Número de sessões com download durante o período especificado.
+          groupChar: .
+    scheme: file

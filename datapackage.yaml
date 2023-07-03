@@ -1,0 +1,33 @@
+profile: data-package
+name: analytics-new
+title: Novo analytics
+description: Extrato dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais
+homepage: https://github.com/dados-mg/analytics-new
+owner_org: controladoria-geral-do-estado-cge
+version: 0.1.0
+contributors:
+  - title: André Amorim
+    role: author
+    email: andre.amorim@cge.mg.gov.br
+licenses:
+  - name: CC-BY-4.0
+    title: Creative Commons Attribution 4.0
+    path: https://creativecommons.org/licenses/by/4.0/
+frequência de atualização: quadrimestral
+keywords: 
+  - 'analytics'
+  - 'acesso'
+  - 'downloads'
+  - 'estatísticas'
+scheme: file
+resources:
+  - dialect: schemas/dialect_v1.yaml
+    encoding: utf-8
+    format: csv
+    hashing: md5
+    name: analytics-ckan-2020-2023
+    path: data/analytics-ckan-2020-2023.csv
+    title: Analytics CKAN New
+    profile: tabular-data-resource
+    schema: schemas/analytics-ckan-2020-2023.yaml
+    scheme: file
