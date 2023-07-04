@@ -12,9 +12,9 @@
 
 ## tarefas
 
-- [ ] criar dataset em homologa
+- [x] criar dataset em homologa
 
-- [ ] criar json inicial com tooltips
+- [x] criar json inicial com tooltips
 	- fonte: 3 consultas da propriedade antiga (UA): 'Todas as Páginas', 'Páginas de Destino' e 'Eventos' 
 	- periodicidade quadrimestral
 
