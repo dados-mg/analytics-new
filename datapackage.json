@@ -121,19 +121,19 @@
           },
           {
             "name": "total-eventos",
-            "type": "integer",
+            "type": "number",
             "description": "Número de ocorrências de downloads.",
             "groupChar": "."
           },
           {
             "name": "eventos-exclusivos",
-            "type": "integer",
+            "type": "number",
             "description": "Número de vezes que um download ocorreu pelo menos uma vez durante uma sessão.",
             "groupChar": "."
           },
           {
             "name": "sessoes-com-evento",
-            "type": "integer",
+            "type": "number",
             "description": "Número de sessões com download durante o período especificado.",
             "groupChar": "."
           }
