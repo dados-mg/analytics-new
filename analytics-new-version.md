@@ -2,11 +2,11 @@
 
 - - - 
 
-- dataset em homologa:
+- dataset em homologa: https://homologa.cge.mg.gov.br/dataset/analytics-new
 
-- card no trello:
+- card no trello: https://trello.com/c/6CFT6l0A
 
-- pasta no drive:
+- pasta no drive: https://docs.google.com/spreadsheets/d/1zj4--L_KoxUFrrSKZ821m5QBCi-rCxam/edit#gid=1218240108
 
 - - - 
 
