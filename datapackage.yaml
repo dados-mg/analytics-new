@@ -1,7 +1,7 @@
 profile: data-package
 name: analytics-new
 title: Novo analytics
-description: Extrato dos Termos de Parceria e Contratos de Gestão firmados pelos órgãos e entidades do Poder Executivo Estadual com OSCIPs e Organizações Sociais
+description: Proposta-modelo para monitoramento dos dados de acesso e downloads do Portal de Dados Abertos
 homepage: https://github.com/dados-mg/analytics-new
 owner_org: controladoria-geral-do-estado-cge
 version: 0.1.0
